@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recipe Book</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #34495e;
+        }
+
+        /* Navigation (Table of Contents) */
+        nav {
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: inline-flex;
+            gap: 15px;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #2c3e50;
+        }
+
+        /* Recipe Sections */
+        section {
+            margin: 40px auto;
+            max-width: 900px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        section img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #2c3e50;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        /* List and Paragraph Styling */
+        ul {
+            list-style-type: disc;
+            margin: 10px 20px;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin: 5px 0;
+        }
+
+        p {
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+
+        a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+            font-size: 0.9rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Recipe Book</h1>
+        <nav>
+            <ul>
+                <li><a href="#recipe1">Spaghetti Carbonara</a></li>
+                <li><a href="#recipe2">Chicken Stir Fry</a></li>
+                <li><a href="#recipe3">Chocolate Brownies</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Recipe 1 -->
+        <section id="recipe1">
+            <h2>Spaghetti Carbonara</h2>
+            <img src="images/spaghetti.jpg" alt="Spaghetti Carbonara">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ingredient</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Spaghetti</td>
+                        <td>200g</td>
+                    </tr>
+                    <tr>
+                        <td>Bacon</td>
+                        <td>100g</td>
+                    </tr>
+                    <tr>
+                        <td>Eggs</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Parmesan Cheese</td>
+                        <td>50g</td>
+                    </tr>
+                </tbody>
+            </table>
+            <ul>
+                <li>Cooking time: 20 minutes</li>
+                <li>Servings: 2</li>
+            </ul>
+            <p>To prepare, cook the spaghetti until al dente. Fry the bacon until crispy, then mix with beaten eggs and Parmesan cheese. Combine with spaghetti and serve warm.</p>
+        </section>
+
+        <!-- Recipe 2 -->
+        <section id="recipe2">
+            <h2>Chicken Stir Fry</h2>
+            <img src="images/chicken-stir-fry.jpg" alt="Chicken Stir Fry">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ingredient</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Chicken Breast</td>
+                        <td>250g</td>
+                    </tr>
+                    <tr>
+                        <td>Mixed Vegetables</td>
+                        <td>200g</td>
+                    </tr>
+                    <tr>
+                        <td>Soy Sauce</td>
+                        <td>3 tbsp</td>
+                    </tr>
+                    <tr>
+                        <td>Ginger & Garlic</td>
+                        <td>1 tsp each</td>
+                    </tr>
+                </tbody>
+            </table>
+            <ul>
+                <li>Cooking time: 25 minutes</li>
+                <li>Servings: 2-3</li>
+            </ul>
+            <p>Stir fry chicken with garlic and ginger until cooked. Add vegetables and soy sauce, cooking until tender. Serve over rice or noodles.</p>
+        </section>
+
+        <!-- Recipe 3 -->
+        <section id="recipe3">
+            <h2>Chocolate Brownies</h2>
+            <img src="images/chocolate-brownies.jpg" alt="Chocolate Brownies">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ingredient</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dark Chocolate</td>
+                        <td>200g</td>
+                    </tr>
+                    <tr>
+                        <td>Butter</td>
+                        <td>150g</td>
+                    </tr>
+                    <tr>
+                        <td>Sugar</td>
+                        <td>200g</td>
+                    </tr>
+                    <tr>
+                        <td>Flour</td>
+                        <td>100g</td>
+                    </tr>
+                </tbody>
+            </table>
+            <ul>
+                <li>Cooking time: 30 minutes</li>
+                <li>Servings: 8</li>
+            </ul>
+            <p>Melt chocolate and butter together. Mix in sugar and flour, then bake at 180°C for 25-30 minutes. Let cool before cutting into squares.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 My Recipe Book | <a href="#top">Back to top</a></p>
+    </footer>
+</body>
+</html>
